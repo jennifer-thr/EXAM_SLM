@@ -19,10 +19,10 @@ public class YardToMeterTest {
         Double testNum = 1.0;
 
         //When
-        yardToMeterService.setNumber(testNum);
+        yardToMeterService.setYard(testNum);
 
         //Then
-        assertEquals(testNum, yardToMeterService.getNumber());
+        assertEquals(testNum, yardToMeterService.getYard());
 
     }
 
@@ -37,11 +37,11 @@ public class YardToMeterTest {
         Double testNumConverted = (testNum / 1.094);
 
         //When
-        yardToMeterService.setNumber(testNum);
+        yardToMeterService.setYard(testNum);
         yardToMeterService.calculateYardToMeter();
 
         //Then
-        assertEquals(testNumConverted, yardToMeterService.getNumber());
+        assertEquals(testNumConverted, yardToMeterService.getYard());
     }
 
 }

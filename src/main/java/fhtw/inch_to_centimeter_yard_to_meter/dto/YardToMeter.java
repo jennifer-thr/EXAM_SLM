@@ -7,11 +7,11 @@ public class YardToMeter {
     /**
      * @param toCentimeter The message to set on the controller.
      */
-    public void setNumber(double toCentimeter) {
+    public void setYard(double toCentimeter) {
         yardToMeter = toCentimeter;
     }
 
-    public float getNumber() {
+    public float getYard() {
         return (float) yardToMeter;
     }
 

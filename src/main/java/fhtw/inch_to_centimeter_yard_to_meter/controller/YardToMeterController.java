@@ -17,23 +17,23 @@ public class YardToMeterController {
 
     }
 
-    @PostMapping("/setNumber/{toMeter}")
-    Float setNumber(@PathVariable Float toMeter) {
+    @PostMapping("/setYard/{toMeter}")
+    Float setYard(@PathVariable Float toMeter) {
 
-        yardToMeterService.setNumber(Double.valueOf(toMeter));
+        yardToMeterService.setYard(Double.valueOf(toMeter));
 
         return toMeter;
 
     }
 
-    @GetMapping("/getNumber")
-    Float getNumber() {
+    @GetMapping("/getYard")
+    Float getYard() {
 
-        return yardToMeterService.getNumber();
+        return yardToMeterService.getYard();
 
     }
 
-    @GetMapping("/doConversion")
+    @GetMapping("/doConversionMeter")
     Float calculateYardToMeter() {
 
         return yardToMeterService.calculateYardToMeter();

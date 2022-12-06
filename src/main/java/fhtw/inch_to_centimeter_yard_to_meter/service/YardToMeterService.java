@@ -11,12 +11,12 @@ public class YardToMeterService {
     /**
      * @param toMeter The message to set on the controller.
      */
-    public void setNumber(Double toMeter) {
-        this.yardToMeter.setNumber(toMeter);
+    public void setYard(Double toMeter) {
+        this.yardToMeter.setYard(toMeter);
     }
 
-    public float getNumber() {
-        return yardToMeter.getNumber();
+    public float getYard() {
+        return yardToMeter.getYard();
     }
 
     public void deleteNumber() {
